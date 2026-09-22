@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap" rel="stylesheet">
 </head>
-
 <body class="tracking-normal bg-[#000] flex mt-0 pt-0 flex-col items-center justify-center">
     <div class="container flex flex-col m-2 w-[100vw] items-center justify-center mt-10">
         <div class="nav flex gap-7 px-7 md:px-10 w-[85%] md:w-[100%] items-center justify-between w-[100%]">
-            <img src="inverted.png" class="cursor-pointer w-25" alt="">
+            <div class="cursor-pointer flex gap-3 items-center">
+                <img src="school.png" class="w-15" alt="">
+                <p>x</p>
+                <img src="inverted.png" class="w-25" alt="">
+            </div>
             <div class="gap-7 flex">
                 <p class="hidden cursor-pointer md:block">Home</p>
                 <p class="hidden cursor-pointer md:block">Gallery</p>
@@ -29,9 +31,9 @@
         </div>
         <div class="hero overflow-hidden bg-linear-to-t from-green-800 to-black w-[100vw] flex flex-col items-center justify-center">
             <div class="bg absolute inset-0 bg-[url('short.png')] bg-center opacity-50 h-[100%] bg-cover lg:bg-[url('medium.png')] bg-bottom"></div>
-            <p class="text-center lg:text-6xl md:text-5xl text-nowrap text-4xl">Coding gives you a<br><span class="font-bold text-4xl md:text-5xl text-nowrap lg:text-6xl">superpower</span>.</p>  
-            <p class="text-center lg:text-5xl lg:my-2 md:text-5xl text-nowrap md:my-1 text-4xl">The superpower to create & build!</p> 
-            <p class="text-center text-md text-stone-100 mt-3 px-3 text-nowrap md:px-0">Join Hack Club Greenway and start your coding today!</p> 
+            <p class="text-center lg:text-6xl md:text-5xl text-nowrap text-3xl px-2 md:px-0">Coding gives you a<br><span class="font-bold text-4xl md:text-3xl text-nowrap lg:text-6xl">superpower</span>.</p>  
+            <p class="text-center lg:text-5xl lg:my-2 md:text-5xl text-nowrap md:my-1 text-3xl px-2 md:px-0">The superpower to create & build!</p> 
+            <p class="text-center text-md text-stone-100 mt-2 px-3 text-nowrap md:px-0">Join Hack Club Greenway and start your coding today!</p> 
             <div class="flex gap-2 mt-5 w-[60%] items-center justify-center ">
                 <div class="text-center text-nowrap px-5 flex items-center justify-around bg-green-400 font-bold text-black py-3 cursor-pointer">
                     <p class="pl-4">Join Today</p> 
@@ -53,19 +55,21 @@
         overflow-x: hidden;
         touch-action: none;
     }
+
     *::selection{
         color: black;
         background: #4ade80;
     }
+
     .bg{
         background-repeat: repeat-x;
         background-size: contain;
         background-position-y: bottom;
         overflow: hidden;
     }
+
     .hero {
         height: calc(100vh - 0.5rem - 44px);
     }
 </style>
-
 </html>
