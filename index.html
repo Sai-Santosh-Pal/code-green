@@ -12,16 +12,29 @@
 </head>
 
 <body class="tracking-normal bg-[#000] flex flex-col items-center justify-center">
-    <div class="container flex m-2 items-center justify-center mt-10">
-        <div class="nav flex gap-7 px-2 md:px-10 items-center justify-between w-[85%] md:w-[100%]">
-            <img src="inverted.png" class="w-25" alt="">
+    <div class="container flex flex-col m-2 w-[100vw] items-center justify-center mt-10">
+        <div class="nav flex gap-7 px-2 md:px-10 w-[85%] md:w-[100%] items-center justify-between w-[100%]">
+            <img src="inverted.png" class="cursor-pointer w-25" alt="">
             <div class="gap-7 flex">
                 <p class="hidden md:block">Home</p>
                 <p class="hidden md:block">Gallery</p>
                 <p class="hidden md:block">About</p>
                 <p class="hidden md:block">Team</p>
             </div>
-            <p class="px-5 text-black bg-[#00ff1a] py-2">Join Now</p>
+            <p class="px-5 text-black cursor-pointer font-bold bg-green-400 py-2">Join Now</p>
+        </div>
+        <div class="hero bg-linear-to-t from-green-800 to-black h-[95vh] w-[100vw] flex flex-col items-center justify-center">
+            <p class="text-center lg:text-6xl md:text-5xl text-4xl">Coding gives you a<br><span class="font-bold text-4xl md:text-5xl lg:text-6xl">superpower</span>.</p>  
+            <p class="text-center lg:text-5xl lg:my-2 md:text-5xl md:my-1 text-4xl">The superpower to create & build!</p> 
+            <p class="text-center text-md text-stone-100 mt-3">Join Hack Club Greenway and start your coding today!</p> 
+            <div class="flex gap-2 mt-5 w-[60%] items-center justify-center">
+                <p class="text-center px-5 border-1 bg-green-400 font-bold text-black py-3 cursor-pointer">Join Today</p>
+                <p class="text-center cursor-pointer px-5 border-1 border-[#e8e8e8] py-3">Learn More</p>
+            </div>
+            <div class="flex items-center opacity-50 justify-center gap-3 mt-2">
+                <p class="text-center mt-5">Powered by</p>
+                <img src="bw.svg" class="hack-club w-20 mt-5" alt="" srcset="">
+            </div>
         </div>
     </div>
 </body>
@@ -29,6 +42,11 @@
     body {
         font-family: 'Geist Pixel';
         color: white;
+        overflow-x: hidden;
+    }
+    *::selection{
+        color: black;
+        background: #4ade80;
     }
 </style>
 
