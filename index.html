@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap" rel="stylesheet">
 </head>
 
-<body class="tracking-normal bg-[#000] flex flex-col items-center justify-center">
+<body class="tracking-normal bg-[#000] flex mt-0 pt-0 flex-col items-center justify-center">
     <div class="container flex flex-col m-2 w-[100vw] items-center justify-center mt-10">
         <div class="nav flex gap-7 px-7 md:px-10 w-[85%] md:w-[100%] items-center justify-between w-[100%]">
             <img src="inverted.png" class="cursor-pointer w-25" alt="">
@@ -27,7 +27,8 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M16 13v-2h-2v2h2Zm-2-2V9h-2v2h2Zm0 4v-2h-2v2h2Zm-2-6V7h-2v2h2Zm0 8v-2h-2v2h2ZM10 7V5H8v2h2Zm0 12v-2H8v2h2Z"/></svg>
                 </div>
         </div>
-        <div class="hero bg-linear-to-t from-green-800 to-black h-[95vh] w-[100vw] flex flex-col items-center justify-center">
+        <div class="hero overflow-hidden bg-linear-to-t from-green-800 to-black w-[100vw] flex flex-col items-center justify-center">
+            <div class="bg absolute inset-0 bg-[url('bg-1.png')] bg-center opacity-50 h-[100%]"></div>
             <p class="text-center lg:text-6xl md:text-5xl text-4xl">Coding gives you a<br><span class="font-bold text-4xl md:text-5xl lg:text-6xl">superpower</span>.</p>  
             <p class="text-center lg:text-5xl lg:my-2 md:text-5xl md:my-1 text-4xl">The superpower to create & build!</p> 
             <p class="text-center text-md text-stone-100 mt-3">Join Hack Club Greenway and start your coding today!</p> 
@@ -54,6 +55,15 @@
     *::selection{
         color: black;
         background: #4ade80;
+    }
+    .bg{
+        background-repeat: repeat-x;
+        background-size: contain;
+        background-position-y: bottom;
+        overflow: hidden;
+    }
+    .hero {
+        height: calc(100vh - 0.5rem - 44px);
     }
 </style>
 
