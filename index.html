@@ -28,18 +28,18 @@
                 </div>
         </div>
         <div class="hero overflow-hidden bg-linear-to-t from-green-800 to-black w-[100vw] flex flex-col items-center justify-center">
-            <div class="bg absolute inset-0 bg-[url('bg-1.png')] bg-center opacity-50 h-[100%]"></div>
-            <p class="text-center lg:text-6xl md:text-5xl text-4xl">Coding gives you a<br><span class="font-bold text-4xl md:text-5xl lg:text-6xl">superpower</span>.</p>  
-            <p class="text-center lg:text-5xl lg:my-2 md:text-5xl md:my-1 text-4xl">The superpower to create & build!</p> 
-            <p class="text-center text-md text-stone-100 mt-3">Join Hack Club Greenway and start your coding today!</p> 
-            <div class="flex gap-2 mt-5 w-[60%] items-center justify-center">
+            <div class="bg absolute inset-0 bg-[url('short.png')] bg-center opacity-50 h-[100%] bg-cover lg:bg-[url('medium.png')] bg-bottom"></div>
+            <p class="text-center lg:text-6xl md:text-5xl text-nowrap text-4xl">Coding gives you a<br><span class="font-bold text-4xl md:text-5xl text-nowrap lg:text-6xl">superpower</span>.</p>  
+            <p class="text-center lg:text-5xl lg:my-2 md:text-5xl text-nowrap md:my-1 text-4xl">The superpower to create & build!</p> 
+            <p class="text-center text-md text-stone-100 mt-3 px-3 text-nowrap md:px-0">Join Hack Club Greenway and start your coding today!</p> 
+            <div class="flex gap-2 mt-5 w-[60%] items-center justify-center ">
                 <div class="text-center text-nowrap px-5 flex items-center justify-around bg-green-400 font-bold text-black py-3 cursor-pointer">
                     <p class="pl-4">Join Today</p> 
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 ml-5" fill="currentColor" viewBox="0 0 24 24"><path d="M16 13v-2h-2v2h2Zm-2-2V9h-2v2h2Zm0 4v-2h-2v2h2Zm-2-6V7h-2v2h2Zm0 8v-2h-2v2h2ZM10 7V5H8v2h2Zm0 12v-2H8v2h2Z"/></svg>
                 </div>
                 <p class="text-center text-nowrap cursor-pointer px-5 border-1 border-[#e8e8e8] py-3">Learn More</p>
             </div>
-            <div class="flex items-center opacity-50 justify-center gap-3 mt-2">
+            <div class="flex items-center opacity-50 justify-center gap-3 mt-2 lg:mb-80">
                 <p class="text-center mt-5">Powered by</p>
                 <img src="bw.svg" class="cursor-pointer hack-club w-20 mt-5" alt="" srcset="">
             </div>
@@ -51,6 +51,7 @@
         font-family: 'Geist Pixel';
         color: white;
         overflow-x: hidden;
+        touch-action: none;
     }
     *::selection{
         color: black;
