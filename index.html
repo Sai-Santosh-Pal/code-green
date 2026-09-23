@@ -10,18 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap" rel="stylesheet">
 </head>
 <body class="tracking-normal bg-[#000] flex mt-0 pt-0 flex-col items-center justify-center">
-    <div class="container flex flex-col m-2 w-[100vw] items-center justify-center mt-10">
+    <div class="container flex flex-col mx-2 w-[100vw] items-center justify-center mt-10">
         <div class="nav flex gap-7 px-7 md:px-10 w-[85%] md:w-[100%] items-center justify-center md:justify-between w-[100%]">
             <div class="cursor-pointer ml-12 md:ml-0 flex gap-3 items-center">
-                <img src="school.png" class="w-15" alt="">
+                <img src="school.png" class="w-15 cursor-pointer" alt="">
                 <p>x</p>
-                <img src="inverted.png" class="w-25" alt="">
+                <img src="inverted.png" class="w-25 cursor-pointer" alt="">
             </div>
             <div class="gap-7 flex">
-                <p class="hidden cursor-pointer md:block">Home</p>
-                <p class="hidden cursor-pointer md:block">Gallery</p>
-                <p class="hidden cursor-pointer md:block">About</p>
-                <p class="hidden cursor-pointer md:block">Team</p>
+                <a href="#">
+                    <p class="links text-gray-300 hidden cursor-pointer md:block">Home</p>
+                </a>
+                <a href="#">
+                    <p class="links text-gray-300 hidden cursor-pointer md:block">Gallery</p>
+                </a>
+                <a href="#">
+                    <p class="links text-gray-300 hidden cursor-pointer md:block">About</p>
+                </a>
+                <a href="#">
+                    <p class="links text-gray-300 hidden cursor-pointer md:block">Team</p>
+                </a>
             </div>
             <!-- <p class="px-5 text-black cursor-pointer font-bold bg-green-400 py-2">Join Now</p> -->
             <div class="hidden text-center text-nowrap px-5 md:flex items-center justify-around bg-green-400 font-bold text-black py-2 cursor-pointer">
@@ -31,19 +39,28 @@
         </div>
         <div class="hero overflow-hidden bg-linear-to-t from-green-800 to-black w-[100vw] flex flex-col items-center justify-center">
             <div class="bg absolute inset-0 bg-[url('short.png')] bg-center opacity-50 h-[100%] bg-cover lg:bg-[url('medium.png')] bg-bottom"></div>
-            <p class="text-center lg:text-6xl md:text-5xl text-3xl px-2 md:px-0">Coding gives you a<br><span class="font-bold text-4xl md:text-3xl lg:text-6xl">superpower</span>.</p>  
-            <p class="text-center lg:text-5xl lg:my-2 md:text-5xl md:my-1 text-3xl px-2 md:px-0">The superpower to create & build!</p> 
+            <p class="text-center mt-[-5vh] lg:text-6xl md:text-5xl text-3xl px-2 text-nowrap md:px-0">Programming gives you a<br><span class="font-bold text-3xl md:text-5xl lg:text-6xl">superpower</span>.</p>  
+            <p class="text-center lg:text-6xl lg:my-2 md:text-5xl md:my-1 text-3xl px-5 md:px-0">The superpower to create & build!</p> 
             <p class="text-center text-md text-stone-100 mt-2 px-3 md:px-0">Join Hack Club Greenway and start your coding today!</p> 
             <div class="flex gap-2 mt-5 w-[60%] items-center justify-center ">
+                <a href="https://clubs.hackclub.com/auth/member?join=HJYBX7" rel="noopener noreferrer" target="_blank">
                 <div class="text-center text-nowrap px-5 flex items-center justify-around bg-green-400 font-bold text-black py-3 cursor-pointer">
-                    <p class="pl-4">Join Today</p> 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 ml-5" fill="currentColor" viewBox="0 0 24 24"><path d="M16 13v-2h-2v2h2Zm-2-2V9h-2v2h2Zm0 4v-2h-2v2h2Zm-2-6V7h-2v2h2Zm0 8v-2h-2v2h2ZM10 7V5H8v2h2Zm0 12v-2H8v2h2Z"/></svg>
-                </div>
-                <p class="text-center text-nowrap cursor-pointer px-5 border-1 border-[#e8e8e8] py-3">Learn More</p>
+                        <p class="pl-4">Join Today</p> 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 ml-5" fill="currentColor" viewBox="0 0 24 24"><path d="M16 13v-2h-2v2h2Zm-2-2V9h-2v2h2Zm0 4v-2h-2v2h2Zm-2-6V7h-2v2h2Zm0 8v-2h-2v2h2ZM10 7V5H8v2h2Zm0 12v-2H8v2h2Z"/></svg>
+                    </div>
+                </a>
+                <a href="#">
+                    <p class="text-center text-nowrap cursor-pointer bg-black px-5 border-1 border-[#e8e8e8] py-3">Learn More</p>
+                </a>
             </div>
-            <div class="flex items-center opacity-50 justify-center gap-3 mt-2 lg:mb-80 mb-30">
+            <div class="flex items-center opacity-50 justify-center gap-3 mt-2">
                 <p class="text-center mt-5">Powered by</p>
-                <img src="bw.svg" class="cursor-pointer hack-club w-20 mt-5" alt="" srcset="">
+                <a href="https://hackclub.com" rel="noopener noreferrer" target="_blank">
+                    <img src="bw.svg" class="cursor-pointer hack-club w-20 mt-5" alt="" srcset="">
+                </a>
+            </div>
+            <div class="hidden lg:block h-[23%]">
+
             </div>
         </div>
     </div>
@@ -53,7 +70,26 @@
         font-family: 'Geist Pixel';
         color: white;
         overflow-x: hidden;
-        touch-action: none;
+    }
+
+    .btns{ 
+        z-index: -1;
+    }
+
+    *{
+        z-index: 1;
+    }
+
+    .nav{
+        z-index: 5;
+    }
+    
+    .links{
+        transition: all 0.2s ease-in-out;                                                                in-out;
+    }
+
+    .links:hover{
+        color: white;
     }
 
     *::selection{
@@ -66,6 +102,7 @@
         background-size: contain;
         background-position-y: bottom;
         overflow: hidden;
+        z-index: 0;
     }
 
     .hero {
