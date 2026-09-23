@@ -32,7 +32,7 @@
                 </a>
             </div>
             <!-- <p class="px-5 text-black cursor-pointer font-bold bg-green-400 py-2">Join Now</p> -->
-            <div class="hidden text-center text-nowrap px-5 md:flex items-center justify-around bg-green-400 font-bold text-black py-2 cursor-pointer">
+            <div class="hidden joinbtn text-center text-nowrap px-5 md:flex items-center justify-around bg-green-400 font-bold text-black py-2 cursor-pointer">
                     <p class="pl-1">Join Today</p> 
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M16 13v-2h-2v2h2Zm-2-2V9h-2v2h2Zm0 4v-2h-2v2h2Zm-2-6V7h-2v2h2Zm0 8v-2h-2v2h2ZM10 7V5H8v2h2Zm0 12v-2H8v2h2Z"/></svg>
                 </div>
@@ -42,9 +42,9 @@
             <p class="text-center mt-[-5vh] lg:text-6xl md:text-5xl text-3xl px-2 text-nowrap md:px-0">Programming gives you a<br><span class="font-bold text-3xl md:text-5xl lg:text-6xl">superpower</span>.</p>  
             <p class="text-center lg:text-6xl lg:my-2 md:text-5xl md:my-1 text-3xl px-5 md:px-0">The superpower to create & build!</p> 
             <p class="text-center text-md text-stone-100 mt-2 px-3 md:px-0">Join Hack Club Greenway and start your coding today!</p> 
-            <div class="flex gap-2 mt-5 w-[60%] items-center justify-center ">
+            <div class="flex gap-2 md:gap-3 mt-5 w-[60%] items-center justify-center ">
                 <a href="https://clubs.hackclub.com/auth/member?join=HJYBX7" rel="noopener noreferrer" target="_blank">
-                <div class="text-center text-nowrap px-5 flex items-center justify-around bg-green-400 font-bold text-black py-3 cursor-pointer">
+                <div class="text-center joinbtn text-nowrap px-5 flex items-center justify-around bg-green-400 font-bold text-black py-3 cursor-pointer">
                         <p class="pl-4">Join Today</p> 
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-7 ml-5" fill="currentColor" viewBox="0 0 24 24"><path d="M16 13v-2h-2v2h2Zm-2-2V9h-2v2h2Zm0 4v-2h-2v2h2Zm-2-6V7h-2v2h2Zm0 8v-2h-2v2h2ZM10 7V5H8v2h2Zm0 12v-2H8v2h2Z"/></svg>
                     </div>
@@ -85,7 +85,7 @@
     }
     
     .links{
-        transition: all 0.2s ease-in-out;                                                                in-out;
+        transition: all 0.2s ease-in-out;
     }
 
     .links:hover{
@@ -95,6 +95,18 @@
     *::selection{
         color: black;
         background: #4ade80;
+    }
+
+    .joinbtn {
+        transition: all 0.3s ease-in-out;
+        outline-offset: 3px;
+        outline: transparent 0px solid;
+
+    }
+
+    .joinbtn:hover{
+        outline: #4ade80 1px solid;
+        outline-offset: 3px;
     }
 
     .bg{
