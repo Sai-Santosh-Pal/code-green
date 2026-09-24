@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         trigger: ".line",
         start: "center center",
         end: () => "+=" + (horizontalSection.scrollWidth),
-        pin: ".parent",
+        pin: ".gallery",
         scrub: 1, 
         invalidateOnRefresh: true
     }
