@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         y: "-100%"
     })
     gsap.to(".line3", {
-        autoAlpha: 1,
+        autoAlpha: () => "+=" + "105%",
         y: () => "-=" + "105%",
         scrollTrigger: {
             trigger: ".line",
