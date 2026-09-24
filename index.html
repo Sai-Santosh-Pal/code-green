@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap" rel="stylesheet">
 </head>
 
-<body class="tracking-normal bg-[#000] flex mt-0 pt-0 flex-col items-center justify-center">
+<body class="tracking-normal bg-[#000] flex mt-0 pt-0 flex-col items-center overflow-hidden justify-center">
     <div class="container flex flex-col mx-2 w-[100vw] items-center justify-center mt-10">
         <div class="nav flex gap-7 px-7 md:px-10 w-[85%] md:w-[100%] items-center justify-center md:justify-between w-[100%]">
             <div class="cursor-pointer md:ml-0 flex gap-3 items-center">
@@ -138,7 +138,7 @@
                 </div>
             </div>
         </div>
-        <div class="gallery flex items-center justify-center h-[fit-content] py-10 w-[90%]">
+        <div class="gallery flex items-center mt-5 justify-center h-[fit-content] py-10 w-[90%]">
             <div class="bigbox w-[80%]">
                 <div class="text mb-8">
                     <p class="text-3xl">Gallery</p>
@@ -173,6 +173,9 @@
 </body>
 
 <style>
+    html, body {
+        overflow-x: hidden !important;
+    }
     body {
         font-family: 'Geist Pixel';
         color: white;
