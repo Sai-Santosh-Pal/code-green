@@ -7,17 +7,43 @@ gsap.ticker.add((time) => {
 gsap.ticker.lagSmoothing(0)
 console.log("check")
 document.addEventListener("DOMContentLoaded", (event) => {
- gsap.registerPlugin(ScrollTrigger)
- let horizontalSection = document.querySelector(".line")
- gsap.to(".line", {
-    x: () => -(horizontalSection.scrollWidth - window.innerWidth),
-    scrollTrigger: {
-        trigger: ".line",
-        start: "center center",
-        end: () => "+=" + (horizontalSection.scrollWidth),
-        pin: ".gallery",
-        scrub: 1, 
-        invalidateOnRefresh: true
-    }
- })
+    gsap.registerPlugin(ScrollTrigger)
+    let horizontalSection = document.querySelector(".line")
+    gsap.to(".line", {
+        x: () => -(horizontalSection.scrollWidth - window.innerWidth),
+        scrollTrigger: {
+            trigger: ".line",
+            start: "center center",
+            end: () => "+=" + (horizontalSection.scrollWidth),
+            pin: ".carousel-wrapper",
+            scrub: 1,
+            invalidateOnRefresh: true
+        }
+    })
+     gsap.set(".line2", {
+        autoAlpha:0, 
+        y: "100%"
+    })
+    gsap.to(".line2", {
+        autoAlpha: 1,
+        y: () => "+=" + "105%",
+        scrollTrigger: {
+            trigger: ".line",
+            start: "center center",
+            end: (horizontalSection.scrollWidth),
+            scrub: 1,
+            invalidateOnRefresh: true
+        },
+    })
+    gsap.to(".line2", {
+        x: () => (horizontalSection.scrollWidth - window.innerWidth) / 10,
+        scrollTrigger: {
+            trigger: ".line",
+            start: "center center",
+            end: () => "+=" + (horizontalSection.scrollWidth),
+            scrub: 1,
+            invalidateOnRefresh: true
+        },
+        delay:10
+    })
 });

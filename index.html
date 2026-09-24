@@ -86,7 +86,7 @@
             </div>
         </div>
         <div class="about  h-[100vh] bg-linear-to-b from-green-800 to-black w-[100vw] lg:h-[60vh] flex items-center justify-center px-10 py-10">
-            <div class="outline-offset bigbox mt-50 md:mt-0 w-[80%] lg:flex lg:items-center lg:gap-[5%]">
+            <div class="outline-offset bigbox mt-70 md:mt-0 w-[80%] lg:flex lg:items-center lg:gap-[5%]">
                 <div class="text">
                     <div class="title">
                         <p class="sub-top text-gray-300">Hack Club Greenway</p>
@@ -138,15 +138,39 @@
                 </div>
             </div>
         </div>
-        <div class="gallery mt-50 md:mt-0 flex items-center mt-5 justify-center h-[fit-content] py-10 w-[90%]">
+        <section class="gallery mt-50 md:mt-0 flex items-center mt-5 justify-center h-[fit-content] py-10 w-[90%]">
+            <div class="block h-10"></div>
             <div class="parent">
                 <div class="bigbox w-[80%]">
-                <div class="text mb-8">
+                <div class="text">
                     <p class="text-3xl">Gallery</p>
                     <p>pics from our recent meetings :)</p>
                 </div>
-                <div class="carousel-wrapper">
+                <div class="carousel-wrapper mt-5">
                     <div class="carousel">
+                        <div class="line2 w-[100vw] ml-[-500px] flex gap-2">
+                            <div class="card max-w-[400px] shrink-0">
+                                <img class="rounded-lg" src="photos/assemble-2022-group-photo.png" alt="club-photo">
+                            </div>
+                            <div class="card max-w-[400px] shrink-0">
+                                <img class="rounded-lg" src="photos/assemble-2022-student-workshop.jpg" alt="club-photo">
+                            </div>
+                            <div class="card max-w-[400px] shrink-0">
+                                <img class="rounded-lg" src="photos/flagship-students-hands-raised.jpg" alt="club-photo">
+                            </div>
+                            <div class="card max-w-[400px] shrink-0">
+                                <img class="rounded-lg" src="photos/outernet-2023-group-photo.png" alt="club-photo">
+                            </div>
+                            <div class="card max-w-[400px] shrink-0">
+                                <img class="rounded-lg" src="photos/outernet-students-flamethrower-demo.png" alt="club-photo">
+                            </div>
+                            <div class="card max-w-[400px] shrink-0">
+                                <img class="rounded-lg" src="photos/outernet-students-coding.jpg" alt="club-photo">
+                            </div>
+                            <div class="card max-w-[400px] shrink-0">
+                                <img class="rounded-lg" src="photos/assemble-2022-student-workshop.jpg" alt="club-photo">
+                            </div>
+                        </div>
                         <div class="line flex gap-2">
                             <div class="card max-w-[400px] shrink-0">
                                 <img class="rounded-lg" src="photos/assemble-2022-group-photo.png" alt="club-photo">
@@ -174,8 +198,8 @@
                 </div>
             </div>
             </div>
-        </div>
-        <div class="h-[100vh]"></div>
+        </section>
+        <h1 class="h-screen text-4xl mt-[350px]">next section check</h1>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script> 
@@ -184,11 +208,13 @@
 </body>
 
 <style>
-    /* .outline-offset {
-        border: #ffffff94 1px solid;
-        outline: 0px;
-        outline-offset: 8px
-    } */
+    .outline-offset {
+        outline: #ffffff5b 1px solid;
+        outline-offset: 1rem;
+        padding-bottom: 1rem;
+        padding-inline: 1rem;
+        border-radius: 0.01px;
+    } 
     html, body {
         overflow-x: hidden !important;
     }
