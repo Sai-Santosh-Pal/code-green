@@ -21,14 +21,14 @@
                 <img src="inverted.png" class="w-25 cursor-pointer" alt="">
             </div>
             <div class="gap-7 hidden md:flex">
-                <a href="#">
+                <a href="#home">
                     <p class="links text-gray-300 hidden cursor-pointer md:block">Home</p>
                 </a>
-                <a href="#">
-                    <p class="links text-gray-300 hidden cursor-pointer md:block">Gallery</p>
-                </a>
-                <a href="#">
+                <a href="#about">
                     <p class="links text-gray-300 hidden cursor-pointer md:block">About</p>
+                </a>
+                <a href="#gallery">
+                    <p class="links text-gray-300 hidden cursor-pointer md:block">Gallery</p>
                 </a>
                 <a href="#">
                     <p class="links text-gray-300 hidden cursor-pointer md:block">Team</p>
@@ -44,7 +44,7 @@
                 </svg>
             </div>
         </div>
-        <div class="hero overflow-hidden bg-linear-to-t from-green-800 to-black w-[100vw] flex flex-col items-center justify-center">
+        <div id="home" class="hero overflow-hidden bg-linear-to-t from-green-800 to-black w-[100vw] flex flex-col items-center justify-center">
             <div
                 class="bg absolute inset-0 bg-[url('short.png')] bg-center opacity-50 h-[100%] bg-cover lg:bg-[url('medium.png')] bg-bottom">
             </div>
@@ -85,7 +85,7 @@
 
             </div>
         </div>
-        <div class="about  h-[100vh] bg-linear-to-b from-green-800 to-black w-[100vw] lg:h-[60vh] flex items-center justify-center px-10 py-10">
+        <div id="about" class="about  h-[100vh] bg-linear-to-b from-green-800 to-black w-[100vw] lg:h-[60vh] flex items-center justify-center px-10 py-10">
             <div class="outline-offset bigbox mt-70 md:mt-0 w-[80%] lg:flex lg:items-center lg:gap-[5%]">
                 <div class="text">
                     <div class="title">
@@ -138,15 +138,15 @@
                 </div>
             </div>
         </div>
-        <section class="gallery mt-70 md:mt-0 flex items-center justify-center h-[fit-content] py-10 w-[90%]">
-            <div class="block h-10"></div>
-            <div class="parent">
+        <section id="gallery" class="gallery mt-70 md:mt-40 lg:mt-20 flex items-center justify-center h-[fit-content] py-10 w-[90%]">
+            <div class="block"></div>
+            <div class="parent h-[fit-content] flex flex-col items-center">
                 <div class="bigbox w-[80%]">
-                <div class="text">
-                    <p class="text-3xl">Gallery</p>
+                <div class="text-center mt-[]">
+                    <p class="text-5xl ">Gallery</p>
                     <p>pics from our recent meetings :)</p>
                 </div>
-                <div class="carousel-wrapper mt-5">
+                <div class="carousel-wrapper mt-[-200px]">
                     <div class="carousel">
                         <div class="line2 w-[100vw] ml-[-500px] flex gap-2">
                             <div class="card max-w-[400px] shrink-0">
