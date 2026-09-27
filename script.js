@@ -24,6 +24,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
         autoAlpha:0, 
         y: "100%"
     })
+    // gsap.from(".line2", {
+    //     autoAlpha:0, 
+    //     y: "100%"
+    // })
+    // gsap.from(".line3", {
+    //     autoAlpha:0, 
+    //     y: "-100%"
+    // })
     gsap.to(".line2", {
         autoAlpha: 1,
         y: () => "+=" + "105%",
