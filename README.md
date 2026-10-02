@@ -8,3 +8,4 @@
 ## Features 
 - responsive design
 - scroll effects (using GSAP and scroll trigger)
+- fully working club website
